@@ -23,6 +23,7 @@ function nullToString($thing) {
     if (is_null($thing)) {
         $thing = "";
     }
+    return $thing;
 }
 
 // Truncates a string at the given word count
