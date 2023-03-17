@@ -44,6 +44,7 @@ if ($silent != TRUE) {
 }
 
 # Check mail and bounces?
+global $sendmails_included; //declare sendmails_included as a global- Camden Salser
 if ($sendmails_included != TRUE) {
     if ($config['check_mail'] == '1') {
         $included = TRUE;
