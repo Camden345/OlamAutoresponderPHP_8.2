@@ -1,4 +1,6 @@
 <?php
+// Edited March 17, 2023 by Camden Salser
+// 
 // This file is part of Olam Autoresponder.
 // Copyright (c) 2004-2007 Aaron Colman and Adaptive Business Design.
 // Copyright (c) 2016 Anna Burdette, Benjamin Jobson, and David Reed.
