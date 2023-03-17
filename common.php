@@ -93,8 +93,8 @@ if ($result->num_rows < 1) {
     $now = time();
 
     # Setup the array
-    $config['Max_Send_Count'] = '500';
-    $config['Last_Activity_Trim'] = '6';
+    $config['max_send_count'] = '500';
+    $config['last_activity_trim'] = '6';
     $config['random_timestamp'] = $now;
     $config['admin_user'] = 'admin';
     $config['admin_pass'] = '';
