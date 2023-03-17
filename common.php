@@ -40,7 +40,7 @@ session_start();
 require_once 'functions.php';
 
 # Set the siteURL
-$_SERVER['HTTP_HOST'] = 'localhost'; //Set HTTP_HOST to localhost - Camden Salser
+$_SERVER['HTTP_HOST'] = 'myHost'; //Set HTTP_HOST to current host - Camden Salser
 if ((!isset($_SERVER['HTTPS'])) || ((strtolower($_SERVER['HTTPS'])) === "off")) {
     $siteURL = "http://" . $_SERVER['HTTP_HOST'];
 } else {
