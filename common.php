@@ -41,13 +41,12 @@ session_start();
 require_once 'functions.php';
 
 # Set the siteURL
-//if (isset( $_SERVER) || isset( $siteURL){ - Camden Salser
-    if ((!isset($_SERVER['HTTPS'])) || ((strtolower($_SERVER['HTTPS'])) === "off")) {
-        $siteURL = "http://" . $_SERVER['HTTP_HOST'];
-    } else {
-        $siteURL = "https://" . $_SERVER['HTTP_HOST'];
-    }
-//} - Camden Salser
+$_SERVER['HTTP_HOST'] = 'localhost'; //Set HTTP_HOST to localhost - Camden Salser
+if ((!isset($_SERVER['HTTPS'])) || ((strtolower($_SERVER['HTTPS'])) === "off")) {
+    $siteURL = "http://" . $_SERVER['HTTP_HOST'];
+} else {
+    $siteURL = "https://" . $_SERVER['HTTP_HOST'];
+}
 
 # Timezone's don't really matter for this app, but we have to set one since older
 #   versions of CentOS often don't provide a default
